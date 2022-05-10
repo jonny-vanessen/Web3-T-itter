@@ -4,6 +4,7 @@ import Home from "./routes/Home";
 import Profile from "./routes/Profile";
 import Settings from "./routes/Settings";
 import LeftSidebar from './components/LeftSidebar';
+import RightSidebar from './components/RightSidebar';
 import "./App.css";
 
 
@@ -21,7 +22,9 @@ export default function App() {
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </div>
-        <div className='right-sidebar'>Right Sidebar</div>
+        <div className='right-sidebar'>
+          <RightSidebar />
+        </div>
       </div>
     </>
   );

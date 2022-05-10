@@ -11,6 +11,7 @@
 .right-sidebar {
   position: sticky;
   color: white;
+  height: 100vh;
 }
 
 .left-sidebar {
