@@ -12,6 +12,7 @@ const Feed = () => {
         <img src={defaultImgs[0]} className='profile-pic' />
         <div className='completed-tweet'>
           <div className='user'>
+            Vango
             <div className='accWhen'>0x42...314 • 1h</div>
           </div>
           <div className='tweet-content'>
@@ -29,7 +30,6 @@ const Feed = () => {
             <div className='interaction-count'>
               <Icon fill='#3f3f3f' size={20} svg='matic' />
             </div>
-
           </div>
         </div>
       </div>
@@ -37,6 +37,7 @@ const Feed = () => {
         <img src={defaultImgs[0]} className='profile-pic' />
         <div className='completed-tweet'>
           <div className='user'>
+            Vango
             <div className='accWhen'>0x42...314 • 1h</div>
           </div>
           <div className='tweet-content'>
@@ -54,7 +55,6 @@ const Feed = () => {
             <div className='interaction-count'>
               <Icon fill='#3f3f3f' size={20} svg='matic' />
             </div>
-
           </div>
         </div>
       </div>
@@ -62,6 +62,7 @@ const Feed = () => {
         <img src={defaultImgs[0]} className='profile-pic' />
         <div className='completed-tweet'>
           <div className='user'>
+            Vango
             <div className='accWhen'>0x42...314 • 1h</div>
           </div>
           <div className='tweet-content'>
@@ -79,7 +80,6 @@ const Feed = () => {
             <div className='interaction-count'>
               <Icon fill='#3f3f3f' size={20} svg='matic' />
             </div>
-
           </div>
         </div>
       </div>
@@ -87,6 +87,7 @@ const Feed = () => {
         <img src={defaultImgs[0]} className='profile-pic' />
         <div className='completed-tweet'>
           <div className='user'>
+            Vango
             <div className='accWhen'>0x42...314 • 1h</div>
           </div>
           <div className='tweet-content'>
@@ -104,7 +105,6 @@ const Feed = () => {
             <div className='interaction-count'>
               <Icon fill='#3f3f3f' size={20} svg='matic' />
             </div>
-
           </div>
         </div>
       </div>
@@ -112,6 +112,7 @@ const Feed = () => {
         <img src={defaultImgs[0]} className='profile-pic' />
         <div className='completed-tweet'>
           <div className='user'>
+            Vango
             <div className='accWhen'>0x42...314 • 1h</div>
           </div>
           <div className='tweet-content'>
@@ -129,7 +130,6 @@ const Feed = () => {
             <div className='interaction-count'>
               <Icon fill='#3f3f3f' size={20} svg='matic' />
             </div>
-
           </div>
         </div>
       </div>
@@ -137,6 +137,7 @@ const Feed = () => {
         <img src={defaultImgs[0]} className='profile-pic' />
         <div className='completed-tweet'>
           <div className='user'>
+            Vango
             <div className='accWhen'>0x42...314 • 1h</div>
           </div>
           <div className='tweet-content'>
@@ -154,7 +155,6 @@ const Feed = () => {
             <div className='interaction-count'>
               <Icon fill='#3f3f3f' size={20} svg='matic' />
             </div>
-
           </div>
         </div>
       </div>
