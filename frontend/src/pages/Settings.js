@@ -23,7 +23,26 @@ const Settings = () => {
 
   const saveEdits = async () => {
     const User = Moralis.Object.extend('_User');
-    console.log(User);
+    const query = new Moralis.Query(User);
+    const myDetails = await query.first();
+    console.log(myDetails);
+
+    if (username) {
+      myDetails.set('username', username);
+    }
+    if (bio) {
+      myDetails.set('bio', bio);
+    }
+
+    if (theFile) {
+      const data = theFile;
+      const file = new Moralis.File(data.name, data);
+      await file.saveIPFS();
+      myDetails.set('banner', file.ipfs());
+    }
+
+    await myDetails.save();
+    window.location.reload();
   };
 
   const onBannerClick = () => {
