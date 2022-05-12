@@ -6,26 +6,46 @@ import Settings from "./pages/Settings";
 import LeftSidebar from './components/LeftSidebar';
 import RightSidebar from './components/RightSidebar';
 import "./App.css";
+import { useMoralis } from 'react-moralis';
+import { ConnectButton, Icon } from 'web3uikit';
 
 
-export default function App() {
+const App = () => {
+
+  const { isAuthenticated, Moralis } = useMoralis();
+
+  const logout = async () => {
+    await Moralis.User.logOut();
+    window.location.reload();
+  };
+
   return (
     <>
-      <div className='page'>
-        <div className='left-sidebar'>
-          <LeftSidebar />
+      {isAuthenticated ? (
+        <div className='page'>
+          <div className='left-sidebar'>
+            <LeftSidebar />
+            <div className='logout' onClick={() => logout()}>Logout</div>
+          </div>
+          <div className="main-window">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/settings" element={<Settings />} />
+            </Routes>
+          </div>
+          <div className='right-sidebar'>
+            <RightSidebar />
+          </div>
         </div>
-        <div className="main-window">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
+      ) : (
+        <div className='login-page'>
+          <Icon fill='#ffffff' size={40} svg='twitter' />
+          <ConnectButton />
         </div>
-        <div className='right-sidebar'>
-          <RightSidebar />
-        </div>
-      </div>
+      )}
     </>
   );
-}
+};
+
+export default App;

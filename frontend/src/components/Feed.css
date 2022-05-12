@@ -23,14 +23,14 @@
 .interactions {
   margin-top: 10px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 150px;
 }
 
 .interaction-count {
   color:#3f3f3f;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   gap: 10px;
   padding: 10px;
   border-radius: 1000px;
@@ -57,7 +57,7 @@
 
 .tweet-content{
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column;
   gap:10px;
 }

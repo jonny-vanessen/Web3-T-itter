@@ -23,7 +23,7 @@ const Home = () => {
       <div className='page-identify'>Home</div>
       <div className='main-content'>
         <div className='profile'>
-          <img src={defaultImgs[0]} className='profile-pic' alt="profile picture" />
+          <img src={defaultImgs[0]} className='profile-pic' alt="profile" />
           <div className='tweet-input'>
             <TextArea
               label=''
@@ -33,7 +33,7 @@ const Home = () => {
               width='95%'
             />
             {selectedFile && (
-              <img src={selectedFile} className='tweet-img' />
+              <img src={selectedFile} className='tweet-img' alt='pic' />
             )}
             <div className='img-or-tweet'>
               <div className='img-div' onClick={onImgClick}>

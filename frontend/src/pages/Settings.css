@@ -1,0 +1,63 @@
+.settings-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pfp {
+  color:#68738D;
+  padding-left: 10px;
+}
+
+.pfp-options {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap:30px;
+}
+
+.pfp-option {
+  border-radius: 50%;
+  margin-top:10px;
+  width:110px;
+  height:110px;
+  border:5px;
+}
+.pfp-option:hover {
+  cursor: pointer;
+}
+.pfp-option-selected {
+  border-radius: 50%;
+  margin-top:10px;
+  width:110px;
+  height:110px;
+  border:5px solid #1DA1F2;
+}
+
+.banner {
+  width:90%;
+  height:200px;
+  object-fit: cover;
+}
+
+.banner:hover {
+  cursor:pointer;
+}
+
+.save-btn {
+  background-color: #1DA1F2;
+  padding: 10px 20px;
+  border-radius: 1000px;
+  color: white;
+  font-weight: 600;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 80%;
+}
+
+.save-btn:hover{
+  cursor:pointer;
+}

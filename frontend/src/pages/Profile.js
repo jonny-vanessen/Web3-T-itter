@@ -13,7 +13,7 @@ const Profile = () => {
       <div className='page-identify'>Profile</div>
       <img className='profile-banner' src={defaultImgs[1]} alt="profile-banner" />
       <div className='profile-container'>
-        <img className='profile-picture' src={defaultImgs[0]} alt="profile picture" />
+        <img className='profile-picture' src={defaultImgs[0]} alt="profile" />
         <div className='profile-name'>Vango</div>
         <div className='profile-wallet'>0x42...314</div>
         <Link to='/settings'>

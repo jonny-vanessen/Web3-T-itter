@@ -1,7 +1,7 @@
 import React from 'react';
 import './Feed.css';
 import golf from '../images/golf.png';
-import canoe from '../images/canoe.png';
+// import canoe from '../images/canoe.png';
 import { defaultImgs } from '../defaultImgs';
 import { Icon } from 'web3uikit';
 
@@ -9,7 +9,7 @@ const Feed = () => {
   return (
     <>
       <div className='tweet-in-feed'>
-        <img src={defaultImgs[0]} className='profile-pic' />
+        <img src={defaultImgs[0]} className='profile-pic' alt='pic' />
         <div className='completed-tweet'>
           <div className='user'>
             Vango
@@ -34,7 +34,7 @@ const Feed = () => {
         </div>
       </div>
       <div className='tweet-in-feed'>
-        <img src={defaultImgs[0]} className='profile-pic' />
+        <img src={defaultImgs[0]} className='profile-pic' alt='pic' />
         <div className='completed-tweet'>
           <div className='user'>
             Vango
@@ -59,7 +59,7 @@ const Feed = () => {
         </div>
       </div>
       <div className='tweet-in-feed'>
-        <img src={defaultImgs[0]} className='profile-pic' />
+        <img src={defaultImgs[0]} className='profile-pic' alt='pic' />
         <div className='completed-tweet'>
           <div className='user'>
             Vango
@@ -84,7 +84,7 @@ const Feed = () => {
         </div>
       </div>
       <div className='tweet-in-feed'>
-        <img src={defaultImgs[0]} className='profile-pic' />
+        <img src={defaultImgs[0]} className='profile-pic' alt='pic' />
         <div className='completed-tweet'>
           <div className='user'>
             Vango
@@ -109,7 +109,7 @@ const Feed = () => {
         </div>
       </div>
       <div className='tweet-in-feed'>
-        <img src={defaultImgs[0]} className='profile-pic' />
+        <img src={defaultImgs[0]} className='profile-pic' alt='pic' />
         <div className='completed-tweet'>
           <div className='user'>
             Vango
@@ -134,7 +134,7 @@ const Feed = () => {
         </div>
       </div>
       <div className='tweet-in-feed'>
-        <img src={defaultImgs[0]} className='profile-pic' />
+        <img src={defaultImgs[0]} className='profile-pic' alt='pic' />
         <div className='completed-tweet'>
           <div className='user'>
             Vango
