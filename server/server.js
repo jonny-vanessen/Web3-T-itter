@@ -29,7 +29,7 @@ const fetchNews = async () => {
 app.get('/api', async (req, res) => {
   res.header('Access-Control-Allow-Origin', '*');
   let news = await fetchNews();
-  news.length = 10;
+  news.length = 8;
   res.json(news);
 });
 
