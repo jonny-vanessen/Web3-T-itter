@@ -3,37 +3,34 @@ const app = express();
 const port = process.env.PORT || 3080;
 // const fs = require('fs');
 
-// const trends = [
-//   {
-//     img: spaceshooter,
-//     text: "Learn how to build a Web3 FPS game using unity...",
-//     link: "https://moralis.io/moralis-projects-learn-to-build-a-web3-space-fps-game/",
-//   },
-//   {
-//     img: netflix,
-//     text: "The fisrt Moralis Project! Let's Netflix and chill...",
-//     link: "https://moralis.io/moralis-projects-learn-to-build-a-web3-netflix-clone/",
-//   },
-//   {
-//     img: academy,
-//     text: "Master DeFi in 2022. Start  at the Moralis Academy...",
-//     link: "https://academy.moralis.io/courses/defi-101",
-//   },
-//   {
-//     img: js,
-//     text: "Become a Web3 Developer with just simple JS...",
-//     link: "https://academy.moralis.io/all-courses",
-//   },
-//   {
-//     img: youtube,
-//     text: "Best youtube channel to learn about Web3...",
-//     link: "https://www.youtube.com/channel/UCgWS9Q3P5AxCWyQLT2kQhBw",
-//   },
-// ];
 
-app.get('/api', (req, res) => {
+const axios = require("axios");
+
+const options = {
+  method: 'GET',
+  url: 'https://crypto-news-live3.p.rapidapi.com/news',
+  headers: {
+    'X-RapidAPI-Host': 'crypto-news-live3.p.rapidapi.com',
+    'X-RapidAPI-Key': '47e9141977mshbd24a2d489d7c64p12cf85jsn3a0fe2ebe61d'
+  }
+};
+
+const fetchNews = async () => {
+  try {
+    const response = await axios.request(options);
+    const data = response.data;
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+
+app.get('/api', async (req, res) => {
   res.header('Access-Control-Allow-Origin', '*');
-  res.json({ "users": ["user1", "user2"] });
+  let news = await fetchNews();
+  news.length = 10;
+  res.json(news);
 });
 
 app.listen(port, () => {

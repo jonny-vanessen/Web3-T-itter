@@ -38,5 +38,11 @@ a:link{
 
 .menu-item:hover{
   cursor:pointer;
-  background-color: #282828;
+  background-color: #222b34;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
