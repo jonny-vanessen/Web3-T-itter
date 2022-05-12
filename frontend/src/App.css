@@ -10,6 +10,7 @@
 .left-sidebar, 
 .right-sidebar {
   position: sticky;
+  top: 0;
   color: white;
   height: 100vh;
 }

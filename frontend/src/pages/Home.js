@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import "./Home.css";
 import { defaultImgs } from '../defaultImgs';
 import { TextArea, Icon } from 'web3uikit';
+import Feed from '../components/Feed.js';
 
 const Home = () => {
 
@@ -14,11 +15,12 @@ const Home = () => {
 
   const handleChange = (e) => {
     const img = e.target.files[0];
-    setSelectedFile(URL.creatteObjectURL(img));
+    setSelectedFile(URL.createObjectURL(img));
   };
 
   return (
     <>
+      <div className='page-identify'>Home</div>
       <div className='main-content'>
         <div className='profile'>
           <img src={defaultImgs[0]} className='profile-pic' alt="profile picture" />
@@ -53,6 +55,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <Feed profile={false} />
       </div>
     </>
   );
